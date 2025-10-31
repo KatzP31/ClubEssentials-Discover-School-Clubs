@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClubEssentials | Discover School Clubs</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Discover engaging high school clubs and after-school activities. Find, favorite, and explore your passions easily.">
+    <meta name="keywords" content="clubs, school, after-school, students, activities, high school">
+    <meta name="author" content="After School Club Finder">
+
+    <!-- Progressive enhancements -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ClubEssentials | After School Club Finder">
+    <meta property="og:description" content="Timeless and engaging high school clubs & after-school activities.">
+    <meta property="og:image" content="https://katzp31.github.io/After-School-Club-Finder/clubfinder1200x630.jpg">
+    <meta property="og:url" content="https://katzp31.github.io/After-School-Club-Finder/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ClubEssentials">
+    <meta name="twitter:description" content="Discover engaging school clubs and after-school activities.">
+    <meta name="twitter:image" content="https://katzp31.github.io/After-School-Club-Finder/clubfinder1200x600.jpg">
+
+    <!-- DNS Prefetch & Preconnect for performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="./ClubEssentials (3).png" as="image">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Schoolbell&family=Sue+Ellen+Francisco&display=swap"
+        as="style">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Schoolbell&family=Sue+Ellen+Francisco&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons (async load with integrity) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+    </noscript>
+
+
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            integrity="sha512-PLACEHASHHERE" crossorigin="anonymous">
+    </noscript>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./ClubEssentials (3).png" sizes="64x64">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Cache hint (useful but safe) -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <a href="#home" class="logo-link">
+                <img src="./ClubEssentials (3).png" alt="ClubEssentials logo" width="100" height="100" loading="lazy"
+                    decoding="async">
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu"
+                aria-expanded="false">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#supply">Club Finder</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#connect">Stay Connected</a></li>
+                <li><button id="favToggle" class="fav-btn" aria-label="Open favorites list">❤️ Favorites</button></li>
+            </ul>
+        </nav>
+
+        <aside class="favorites-drawer" id="favoritesDrawer" aria-label="Favorites drawer">
+            <div class="drawer-header">
+                <h3>❤️ Your Favorites</h3>
+                <button id="closeDrawer" aria-label="Close favorites drawer">&times;</button>
+            </div>
+            <div class="favorites-container" id="favoritesContainer" tabindex="0"></div>
+        </aside>
+    </header>
+
+    <main>
+        <!-- HOME -->
+        <section id="home" class="home-section" aria-labelledby="home-heading">
+            <div class="home-content">
+                <h1 id="home-heading">You Came to the Right Place!</h1>
+                <p>Timeless and engaging high school clubs & after-school activities. Delightful, endless options for
+                    students.</p>
+            </div>
+            <div class="home-image" role="img" aria-label="Students enjoying after-school clubs"></div>
+        </section>
+
+        <!-- CLUB FINDER -->
+        <section id="supply" class="supply-section" aria-labelledby="club-heading">
+            <h2 id="club-heading">Explore School Clubs!</h2>
+            <form class="search-bar" role="search" aria-label="Search for clubs" onsubmit="return false;">
+                <label for="searchInput" class="visually-hidden">Search clubs</label>
+                <input id="searchInput" type="text" placeholder="Search for a club..." aria-describedby="searchDesc">
+                <span id="searchDesc" class="visually-hidden">Type to find clubs by name.</span>
+                <button id="searchBtn" type="button">Search</button>
+            </form>
+            <div class="card-grid" id="clubGrid" aria-live="polite"></div>
+
+            <nav class="pagination" id="pagination" aria-label="Pagination">
+                <button id="prevPage" aria-label="Previous page">←</button>
+                <span id="pageNumbers"></span>
+                <button id="nextPage" aria-label="Next page">→</button>
+            </nav>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="about-section" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Us</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="https://tinyurl.com/vzyhdfps" alt="Students discovering clubs matching passions"
+                        width="150" height="150" loading="lazy" decoding="async">
+                    <h3>Discover clubs to match your passions.</h3>
+                </div>
+                <div class="team-member">
+                    <img src="https://tinyurl.com/edvzwnnt" alt="Students favoriting clubs and planning activities"
+                        width="150" height="150" loading="lazy" decoding="async">
+                    <h3>Quickly favorite clubs and plan activities.</h3>
+                </div>
+                <div class="team-member">
+                    <img src="https://tinyurl.com/bp7huzn4" alt="Students attending school community events" width="150"
+                        height="150" loading="lazy" decoding="async">
+                    <h3>Stay updated with events in your community.</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="connect" role="contentinfo">
+        <div class="footer-logo">
+            <img src="./ClubEssentials (3).png" alt="ClubEssentials mini logo" width="50" height="50" loading="lazy"
+                decoding="async">
+        </div>
+        <div class="footer-text">
+            <h2>Thanks for Stopping By!!</h2>
+            <p>Explore essential high school clubs and after-school activities.</p>
+        </div>
+        <div class="footer-social">
+            <p>Get Social with Us!</p>
+            <div class="icons">
+                <a href="#" aria-label="Official Website"><i class="fas fa-globe"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

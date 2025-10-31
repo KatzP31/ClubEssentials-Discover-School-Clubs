@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Science Club",
+        "description": "Explore the wonders of physics, chemistry, and biology with hands-on experiments.",
+        "image": "https://shorturl.at/CxwOd"
+    },
+    {
+        "name": "Art Club",
+        "description": "Express your creativity through drawing, painting, and digital art.",
+        "image": "https://shorturl.at/o3fEa"
+    },
+    {
+        "name": "Robotics Club",
+        "description": "Build, code, and compete with student-made robots in exciting challenges.",
+        "image": "https://shorturl.at/7UcS2"
+    },
+    {
+        "name": "Drama Club",
+        "description": "Act, direct, and perform! Join a community of passionate performers.",
+        "image": "https://shorturl.at/oyZq0"
+    },
+    {
+        "name": "Chess Club",
+        "description": "Sharpen your mind and compete in tournaments with fellow strategists.",
+        "image": "https://tinyurl.com/4b6j9szu"
+    },
+    {
+        "name": "Photography Club",
+        "description": "Capture the world through your lens and learn professional photography skills.",
+        "image": "https://tinyurl.com/vdhyx5fx"
+    },
+    {
+        "name": "Music Club",
+        "description": "Join fellow musicians to jam, compose, and perform in concerts and events.",
+        "image": "https://tinyurl.com/4rmvrphp"
+    },
+    {
+        "name": "Environmental Club",
+        "description": "Promote sustainability through projects, cleanups, and environmental advocacy.",
+        "image": "https://tinyurl.com/kvbcr6dx"
+    },
+    {
+        "name": "Debate Club",
+        "description": "Sharpen your public speaking and critical thinking skills by debating current topics.",
+        "image": "https://tinyurl.com/7j5ectmj"
+    },
+    {
+        "name": "Coding Club",
+        "description": "Learn programming languages, create apps, and participate in coding competitions.",
+        "image": "https://tinyurl.com/mphh7bzt"
+    }
+]
